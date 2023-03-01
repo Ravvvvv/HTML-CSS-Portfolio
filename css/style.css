@@ -64,18 +64,18 @@ section {
 .main-header {
     height: 70vh;
     background-image: url(../img/header.jpg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .main-header .main-header-content {
     text-align: center;
 }
+
 
 .main-header .main-header-content h1 {
     font-size: 4.2em;
@@ -86,16 +86,13 @@ section {
 
 .main-header .main-header-content p {
     color: #333;
-    font-size: 1, 3em;
+    font-size: 1.3em;
     margin: 40px 0;
-
 }
 
 .main-header .main-header-content p span {
-
     color: #007bff;
 }
-
 
 /* main  menu styles */
 
@@ -104,9 +101,10 @@ section {
 
 }
 
-#drop-nav{
+#drop-nav {
     display: none;
 }
+
 label[for="drop-nav"] {
     display: none;
 }
@@ -199,7 +197,7 @@ label[for="drop-nav"] {
     font-weight: 300;
     font-size: 3em;
     opacity: 0;
-    transition: 0.3s;
+    transition: all 0.3s;
 
 
 }
@@ -264,15 +262,15 @@ label[for="drop-nav"] {
 
 /*responsive styles*/
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
         max-width: 992px;
     }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .container {
-        max-width: 50%;
+        max-width: 768px;
     }
 
     .portfolio-wrapper .portfolio-item {
@@ -280,7 +278,8 @@ label[for="drop-nav"] {
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+
     .container {
         max-width: 95%;
     }
@@ -306,28 +305,30 @@ label[for="drop-nav"] {
         flex-basis: 100%;
     }
 
-}
 
-label[for="drop-nav"] {
-    display: block;
-    padding: 14px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: right;
-    cursor: pointer;
-}
-#drop-nav:checked + ul{
-    display: block;
-}
 
-.main-menu ul {
-    display: none;
-}
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
 
-.main-menu ul .main-item{
-    display: block;
-    text-align: right;
-    margin: 0;
-}
+    #drop-nav:checked+ul {
+        display: block;
+    }
 
+    .main-menu ul {
+        display: none;
+    }
+
+    .main-menu ul .main-item {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+
+}
